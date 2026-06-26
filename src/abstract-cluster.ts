@@ -10,11 +10,11 @@ export abstract class AbstractCluster<T> {
     public abstract leafClusters(): LeafCluster<T>[];
 
     public clusterElementIds(): number[] {
-        return this.leafClusters().map(e => e.id);
+        return this.leafClusters().map((e) => e.id);
     }
 
     public clusterElements(): T[] {
-        return this.leafClusters().map(e => e.object);
+        return this.leafClusters().map((e) => e.object);
     }
 
     public size(): number {

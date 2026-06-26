@@ -1,6 +1,8 @@
 node_modules
 dist
 coverage
-dbvis-hc-*.tgz
+ts-hierarchical-clustering-*.tgz
 
 .vscode
+
+CLAUDE.md

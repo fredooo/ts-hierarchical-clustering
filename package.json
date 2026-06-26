@@ -1,23 +1,23 @@
 {
-  "name": "dbvis-hc",
-  "version": "1.0.8",
+  "name": "ts-hierarchical-clustering",
+  "version": "1.0.9",
   "description": "A TypeScript implementation of AGNES, an agglomerative hierarchical clustering algorithm",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint src test --ext .ts",
-    "lint:fix": "eslint src test --ext .ts --fix",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
     "test": "jest",
     "build": "tsc",
     "prepare": "npm run lint && npm run test && npm run build",
-    "clean": "rm -r dist; rm -r coverage; rm dbvis-hc-*.tgz; echo 'done'"
+    "clean": "rm -r dist; rm -r coverage; rm ts-hierarchical-clustering-*.tgz; echo 'done'"
   },
   "files": [
     "dist/**"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fredooo/dbvis-hc.git"
+    "url": "git+https://github.com/fredooo/ts-hierarchical-clustering.git"
   },
   "keywords": [
     "hierarchical",
@@ -29,15 +29,14 @@
   "author": "Frederik Dennig",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.5.3"
+    "@types/jest": "^30.0.0",
+    "eslint": "^10.5.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "jest": "^30.4.2",
+    "prettier": "^3.8.4",
+    "ts-jest": "^29.4.11",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
   }
 }

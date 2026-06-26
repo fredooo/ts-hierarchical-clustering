@@ -13,7 +13,7 @@ export class HierarchicalClustering<T> {
         this.clusterFactory = new ClusterFactory();
         this.objects = objects;
         this.linkage = linkage;
-        this.clusters = this.objects.map(e => this.clusterFactory.createLeafCluster(e));
+        this.clusters = this.objects.map((e) => this.clusterFactory.createLeafCluster(e));
         this.linkageValues = [];
         this.initializeLinkageValues();
     }
@@ -25,9 +25,9 @@ export class HierarchicalClustering<T> {
             const { c1, c2, distance: value } = this.linkageValues[0];
             const merged = this.clusterFactory.createMergedCluster(c1, c2, value);
             // Remove merged cluster from the cluster and linkage values list
-            this.clusters = this.clusters.filter(e => e.id !== c1.id && e.id !== c2.id);
+            this.clusters = this.clusters.filter((e) => e.id !== c1.id && e.id !== c2.id);
             this.linkageValues = this.linkageValues.filter(
-                e => e.c1.id !== c1.id && e.c1.id !== c2.id && e.c2.id !== c1.id && e.c2.id !== c2.id
+                (e) => e.c1.id !== c1.id && e.c1.id !== c2.id && e.c2.id !== c1.id && e.c2.id !== c2.id
             );
             // Calculate and store distances to the merged cluster
             for (const cluster of this.clusters) {

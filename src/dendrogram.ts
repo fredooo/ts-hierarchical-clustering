@@ -17,13 +17,13 @@ export class Dendrogram<T> {
     public extractClustersAsRefs(): T[][] {
         this.groups = [];
         this.extractClustersRecursively(this.cluster);
-        return this.groups.map(g => g.map(c => c.object));
+        return this.groups.map((g) => g.map((c) => c.object));
     }
 
     public extractClustersAsIds(): number[][] {
         this.groups = [];
         this.extractClustersRecursively(this.cluster);
-        return this.groups.map(g => g.map(c => c.id));
+        return this.groups.map((g) => g.map((c) => c.id));
     }
 
     /**

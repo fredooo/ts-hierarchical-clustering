@@ -1,7 +1,7 @@
-dbvis-hc
-========
+ts-hierarchical-clustering
+==========================
 
-[![npm version](https://badge.fury.io/js/dbvis-hc.svg)](https://badge.fury.io/js/dbvis-hc) [![Build Status](https://travis-ci.org/fredooo/dbvis-hc.svg?branch=master)](https://travis-ci.org/fredooo/dbvis-hc) [![codecov](https://codecov.io/gh/fredooo/dbvis-hc/branch/master/graph/badge.svg)](https://codecov.io/gh/fredooo/dbvis-hc) [![dependencies Status](https://david-dm.org/fredooo/dbvis-hc/status.svg)](https://david-dm.org/fredooo/dbvis-hc) [![devDependencies Status](https://david-dm.org/fredooo/dbvis-hc/dev-status.svg)](https://david-dm.org/fredooo/dbvis-hc?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/ts-hierarchical-clustering.svg)](https://badge.fury.io/js/ts-hierarchical-clustering) [![Build](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml/badge.svg)](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml) [![codecov](https://codecov.io/gh/fredooo/ts-hierarchical-clustering/branch/master/graph/badge.svg)](https://codecov.io/gh/fredooo/ts-hierarchical-clustering) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A TypeScript implementation of [AGNES][1], an agglomerative hierarchical clustering algorithm.
 
@@ -10,16 +10,17 @@ A TypeScript implementation of [AGNES][1], an agglomerative hierarchical cluster
 Install with `npm`:
 
 ```bash
-npm install --save dbvis-hc
+npm install --save ts-hierarchical-clustering
 ```
 
-This package requires module resolution by Node in `tsconfig.json`:
+This package ships CommonJS with bundled type declarations. It works with any
+modern TypeScript module resolution (`node16`, `nodenext`, or `bundler`), e.g.:
 
 ```json
 {
     "compilerOptions": {
-        "moduleResolution": "node"
-    }   
+        "moduleResolution": "node16"
+    }
 }
 ```
 
@@ -30,7 +31,7 @@ This implementation can be used to cluster generic objects, given a useful defin
 Example:
 
 ```javascript
-    import { CentroidLinkage, Dendrogram, HierarchicalClustering } from 'dbvis-hc';
+    import { CentroidLinkage, Dendrogram, HierarchicalClustering } from 'ts-hierarchical-clustering';
 
     const data = [ 10, 0.9, 1.0, 11, 1.1 ];
     // Distance function required by all linkage strategies 

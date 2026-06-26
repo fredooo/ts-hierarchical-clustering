@@ -10,6 +10,18 @@ All notable changes to this project will be documented in this file.
 - Fixed
 - Security
 
+## [v1.0.9] (2026-06-26)
+### Changed
+- Updated all dev dependencies to latest (TypeScript 6, Jest 30, ESLint 10, Prettier 3)
+- Migrated ESLint to flat config (`eslint.config.mjs`)
+- Modernized `tsconfig.json` (ES2021 target, Node16 module resolution)
+
+### Added
+- GitHub Actions build workflow with Codecov coverage upload
+
+### Removed
+- Travis CI configuration
+
 ## [v1.0.8] (2019-08-27)
 ### Security
 - Updated `eslint-utils`
@@ -62,12 +74,12 @@ All notable changes to this project will be documented in this file.
 - Implementation of the AGNES hierarchical clustering algorithm
 - Strategies: Single-Linkage, Complete-Linkage, Average-Linkage, Average-Group-Linkage, and Centroid-Linkage
 
-[v1.0.5]: https://github.com/fredooo/dbvis-hc/compare/v1.0.4...v1.0.5
-[v1.0.4]: https://github.com/fredooo/dbvis-hc/compare/v1.0.3...v1.0.4
-[v1.0.3]: https://github.com/fredooo/dbvis-hc/compare/v1.0.2...v1.0.3
-[v1.0.2]: https://github.com/fredooo/dbvis-hc/compare/v1.0.1...v1.0.2
-[v1.0.1]: https://github.com/fredooo/dbvis-hc/releases/tag/v1.0.1
-[v1.0.0]: https://github.com/fredooo/dbvis-hc/commit/d5d44180fff8419986c8103f0a64586446f85412
+[v1.0.5]: https://github.com/fredooo/ts-hierarchical-clustering/compare/v1.0.4...v1.0.5
+[v1.0.4]: https://github.com/fredooo/ts-hierarchical-clustering/compare/v1.0.3...v1.0.4
+[v1.0.3]: https://github.com/fredooo/ts-hierarchical-clustering/compare/v1.0.2...v1.0.3
+[v1.0.2]: https://github.com/fredooo/ts-hierarchical-clustering/compare/v1.0.1...v1.0.2
+[v1.0.1]: https://github.com/fredooo/ts-hierarchical-clustering/releases/tag/v1.0.1
+[v1.0.0]: https://github.com/fredooo/ts-hierarchical-clustering/commit/d5d44180fff8419986c8103f0a64586446f85412
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
