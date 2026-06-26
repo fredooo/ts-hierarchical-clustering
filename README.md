@@ -1,7 +1,7 @@
 ts-hierarchical-clustering
 ==========================
 
-[![npm version](https://badge.fury.io/js/ts-hierarchical-clustering.svg)](https://badge.fury.io/js/ts-hierarchical-clustering) [![Build](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml/badge.svg)](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml) [![codecov](https://codecov.io/gh/fredooo/ts-hierarchical-clustering/branch/master/graph/badge.svg)](https://codecov.io/gh/fredooo/ts-hierarchical-clustering) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml/badge.svg)](https://github.com/fredooo/ts-hierarchical-clustering/actions/workflows/build.yml) [![Coverage Status](https://coveralls.io/repos/github/fredooo/ts-hierarchical-clustering/badge.svg?branch=master)](https://coveralls.io/github/fredooo/ts-hierarchical-clustering?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A TypeScript implementation of [AGNES][1], an agglomerative hierarchical clustering algorithm.
 
