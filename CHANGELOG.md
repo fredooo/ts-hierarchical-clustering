@@ -10,14 +10,20 @@ All notable changes to this project will be documented in this file.
 - Fixed
 - Security
 
-## [v1.0.9] (2026-06-26)
+## [v1.0.9] (2026-08-06)
 ### Changed
 - Updated all dev dependencies to latest (TypeScript 6, Jest 30, ESLint 10, Prettier 3)
 - Migrated ESLint to flat config (`eslint.config.mjs`)
 - Modernized `tsconfig.json` (ES2021 target, Node16 module resolution)
 
 ### Added
-- GitHub Actions build workflow with Codecov coverage upload
+- GitHub Actions build workflow with Coveralls coverage upload
+
+### Fixed
+- `build` now removes `dist` first, so stale output is no longer packaged
+
+### Security
+- Bumped vulnerable transitive dev dependencies (`js-yaml`, `brace-expansion`)
 
 ### Removed
 - Travis CI configuration

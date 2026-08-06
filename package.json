@@ -8,7 +8,7 @@
     "lint": "eslint src test",
     "lint:fix": "eslint src test --fix",
     "test": "jest",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "prepare": "npm run lint && npm run test && npm run build",
     "clean": "rm -r dist; rm -r coverage; rm ts-hierarchical-clustering-*.tgz; echo 'done'"
   },
